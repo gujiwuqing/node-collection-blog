@@ -1,0 +1,176 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  padding: 20px 20px 0;
+  background: #f5f7fa;
+}
+
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+  background: #000;
+  height: 4px;
+}
+
+.progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: #f00;
+}
+
+body::-webkit-scrollbar {
+  width: .5rem;
+  height: .5rem;
+  background: hsla(0, 0%, 100%, 0.6);
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: 0;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgba(95, 95, 95, .4);
+  transition: all .2s;
+  border-radius: .5rem;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(95, 95, 95, .7);
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1.title {
+  font-size: 24px;
+  font-weight: normal;
+  letter-spacing: 1.5px;
+}
+
+header #date {
+  font-size: 13px;
+  color: #5fa207;
+}
+
+
+.github-corner :hover .octo-arm {
+  animation: octocat-wave 560ms ease-in-out
+}
+
+.github-corner>svg {
+  fill: #222;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  border: 0;
+  right: 0
+}
+
+@media (max-width: 991px) {
+  .github-corner .github-corner:hover .octo-arm {
+    animation: none
+  }
+  .github-corner .github-corner .octo-arm {
+    animation: octocat-wave 560ms ease-in-out
+  }
+}
+
+
+@-moz-keyframes octocat-wave {
+  0%,100% {
+      transform: rotate(0)
+  }
+
+  20%,60% {
+      transform: rotate(-25deg)
+  }
+
+  40%,80% {
+      transform: rotate(10deg)
+  }
+}
+
+@-webkit-keyframes octocat-wave {
+  0%,100% {
+      transform: rotate(0)
+  }
+
+  20%,60% {
+      transform: rotate(-25deg)
+  }
+
+  40%,80% {
+      transform: rotate(10deg)
+  }
+}
+
+@-o-keyframes octocat-wave {
+  0%,100% {
+      transform: rotate(0)
+  }
+
+  20%,60% {
+      transform: rotate(-25deg)
+  }
+
+  40%,80% {
+      transform: rotate(10deg)
+  }
+}
+
+@keyframes octocat-wave {
+  0%,100% {
+      transform: rotate(0)
+  }
+
+  20%,60% {
+      transform: rotate(-25deg)
+  }
+
+  40%,80% {
+      transform: rotate(10deg)
+  }
+}
+
+a {
+  text-decoration: none;
+  color: #424242;
+  font-size: 13px;
+}
+ul, li {
+  list-style-type: none;
+}
+
+.groups {
+  margin-bottom: 20px !important;
+}
+
+.groups dl {
+  padding: 12px 15px;
+  border-radius: 6px;
+  box-shadow: 8px 8px 20px 0 rgb(55 99 170 / 10%), -8px -8px 20px 0 #fff;
+  transition: box-shadow 0.3s ease-in-out 0.1s;
+}
+
+.groups dl:hover {
+  box-shadow:8px 8px 20px 0 rgba(55,99,170,.2),-8px -8px 20px 0 #fff
+}
+
+.groups dl dd {
+  cursor: pointer !important;
+}
