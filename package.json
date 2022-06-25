@@ -1,0 +1,38 @@
+{
+  "name": "collection-blog",
+  "version": "1.0.0",
+  "description": "采集博客",
+  "main": "main.js",
+  "keywords": [
+    "nodemailer",
+    "cheerio",
+    "request"
+  ],
+  "scripts": {
+    "prebuild": "rm -rf dist",
+    "build": "ts-node ./src/main.ts",
+    "postbuild": "cp -R public ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gujiwuqing/node-collection-blog.git"
+  },
+  "author": "tcly861204 <tcly861204@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gujiwuqing/node-collection-blog/issues"
+  },
+  "homepage": "https://github.com/gujiwuqing/node-collection-blog#readme",
+  "dependencies": {
+    "@types/node": "^17.0.10",
+    "@types/request": "^2.48.8",
+    "cheerio": "^1.0.0-rc.10",
+    "nodemailer": "^6.7.2",
+    "request": "^2.88.2",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^6.4.4"
+  }
+}
