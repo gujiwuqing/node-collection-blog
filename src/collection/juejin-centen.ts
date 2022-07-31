@@ -1,13 +1,14 @@
-import request, { RequestCallback } from 'request'
-const uri = 'https://api.juejin.cn/recommend_api/v1/article/recommend_cate_feed';
-import {getTime} from '../utils';
+import request, {RequestCallback} from 'request';
+import {getTime} from '../utils/index';
+
+const uri = 'https://api.juejin.cn/content_api/v1/article/query_list';
 const juejin = function () {
   return new Promise((reslove, reject) => {
-    const data: Array<string> = []
-    let index = 0
+    const data: Array<string> = [];
+    let index = 0;
     const callback: RequestCallback = function (error, response, body) {
       if (error) {
-        reject(error)
+        reject(error);
       } else {
         try {
           body.data.map((item: any) => {
@@ -38,34 +39,32 @@ const juejin = function () {
                     text-decoration: none;
                     font-size: 13px;">${getTime(ctime)}</div>
                 </dd>
-              `)
+              `);
             } catch (_) {
             }
-          })
+          });
         } catch (_) {
         }
         reslove({
-          name: '掘金-前端',
+          name: '掘金-腾讯TNTWeb前端团队',
           data
-        })
+        });
       }
-    }
+    };
     return request({
       method: 'POST',
       url: uri,
       json: true,
       body: {
-        "id_type": 2,
-        "sort_type": 200,
-        "cate_id": "6809637767543259144",
-        "cursor": "0",
-        "limit": 20
+        'cursor': '0',
+        'sort_type': 2,
+        'user_id': '2277843821933751'
       },
       headers: {
         'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.82 Safari/537.36'
       }
-    }, callback)
-  })
-}
+    }, callback);
+  });
+};
 
-export default juejin
+export default juejin;
