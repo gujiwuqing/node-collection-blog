@@ -6,7 +6,7 @@ const render = function (option: string):string{
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>前端每日必看</title>
+  <title>前端日报</title>
   <link rel="icon" href="https://github.githubassets.com/favicons/favicon.svg" />
   <link rel="stylesheet" href="./public/style.css" />
   <script src="https://cdn.bootcdn.net/ajax/libs/dayjs/1.11.0/dayjs.min.js"></script>
@@ -14,7 +14,7 @@ const render = function (option: string):string{
 </head>
 <body>
   <div class="progress"></div>
-  <a href="https://github.com/tcly861204" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank">
+  <a href="https://github.com/gujiwuqing/node-collection-blog" class="github-corner" title="Follow me on GitHub" aria-label="Follow me on GitHub" rel="noopener" target="_blank">
     <svg width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
       <path d="M0 0 115 115 130 115 142 142 250 250 250 0Z"></path>
       <path d="M128.3 109C113.8 99.7 119 89.6 119 89.6 122 82.7 120.5 78.6 120.5 78.6 119.2 72 123.4 76.3 123.4 76.3 127.3 80.9 125.5 87.3 125.5 87.3 122.9 97.6 130.6 101.9 134.4 103.2" fill="currentColor" style="transform-origin:130px 106px" class="octo-arm"></path>
@@ -22,7 +22,7 @@ const render = function (option: string):string{
     </svg>
   </a>
   <header>
-    <h1 class="title">前端每日必看</h1>
+    <h1 class="title">前端日报</h1>
     <span id="date"></span>
   </header>
   ${option}
