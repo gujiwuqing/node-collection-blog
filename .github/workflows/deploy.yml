@@ -34,6 +34,8 @@ jobs:
                 ${{ runner.os }}-build-${{ env.cache-name }}-
                 ${{ runner.os }}-build-
                 ${{ runner.os }}-
+      - name: Delete
+        run: rm -rf dist
 
       - name: Install
         run: npm install # 安装依赖
