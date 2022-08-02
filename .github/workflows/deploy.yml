@@ -49,7 +49,7 @@ jobs:
         run: cp README.md dist
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3 # 使用部署到 GitHub pages 的 action
+        uses: JamesIves/github-pages-deploy-action@v4.2.3 # 使用部署到 GitHub pages 的 action
         with:
           # 发布到指定分支
           BRANCH: gh-pages
