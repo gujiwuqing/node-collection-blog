@@ -1,7 +1,7 @@
 {
   "name": "collection-blog",
   "version": "1.0.0",
-  "description": "采集博客",
+  "description": "前端日报",
   "main": "main.js",
   "keywords": [
     "nodemailer",
@@ -17,7 +17,7 @@
     "type": "git",
     "url": "git+https://github.com/gujiwuqing/node-collection-blog.git"
   },
-  "author": "tcly861204 <tcly861204@hotmail.com>",
+  "author": "gujiwuqing <15279279713@163.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/gujiwuqing/node-collection-blog/issues"
